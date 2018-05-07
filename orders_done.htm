@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Goose Down Sleeping Bag</title>
+	</head>
+	<body>
+		<!--table displaying CWT logo and page title -->
+		<table width="80%" align="center">
+			<tr>
+				<td><img src="tents.jpg" width="200" height="174" align="right" style="WIDTH: 200px; HEIGHT: 174px"></td>
+				<td><big><b>&nbsp;&nbsp;3-Season Tent</big></B></td>
+			</tr>
+		</table>
+		<!--table and form displaying inventory data -->
+		<form name="frmOrderItem" action="omit for now">
+			<p><table width="80%" border="5" cellspacing="3" cellpadding="5" align="center">
+					<tr>
+						<th width="20%">
+							Selection</th>
+						<th width="20%">
+							Size</th>
+						<th width="20%">
+							Color</th>
+						<th width="20%">
+							Price</th>
+						<th width="20%">
+							In Stock?</th>
+					</tr>
+					<tr>
+						<td align="center"><input type="radio" checked name="optInvid" value="YES"></td>
+						<td align="center">Rectangular</td>
+						<td align="center">Blue</td>
+						<td align="center">259.99</td>
+						<td align="center">Yes</td>
+					</tr>
+				</table>
+			</p>
+			<p>
+				<!--table displaying form controls -->
+				<table width="80%" cellspacing="3" cellpadding="5" align="center">
+					<tr>
+						<td width="70%"><big>Desired Quantity</big> <input type="text" name="txtQuantity" size="10"></td>
+						<td align="right" width="15%"><input type="button" value="Submit Order" onclick="WriteSummary()" id="btnSubmit" name="btnSubmit"></td>
+					</tr>
+				</table>
+			</p>
+			<!-- table summarizing order -->
+			<p>
+				<table width="80%" align="center" border id="Table1">
+					<tr>
+						<td align="right">Subtotal:</td>
+						<td><input type="text" name="txtSubTotal"></td>
+					</tr>
+					<tr>
+						<td align="right">Tax:</td>
+						<td><input type="text" name="txtTax"></td>
+					</tr>
+					<tr>
+						<td align="right">Order Total:</td>
+						<td><input type="text" name="txtOrderTotal"></td>
+					</tr>
+				</table>
+			</p>
+		</form>
+	</body>
+</html>
